@@ -88,7 +88,7 @@ window.addEventListener("load", () => {
     let panels = gsap.utils.toArray("section"),
     scrollTween;
 
-    function goToSection(i) {
+    /*function goToSection(i) {
     scrollTween = gsap.to(window, {
         scrollTo: {y: i * innerHeight, autoKill: false},
         duration: 1.4,
@@ -105,6 +105,6 @@ window.addEventListener("load", () => {
         end: "+=200%",
         onToggle: self => self.isActive && !scrollTween && goToSection(i)
     });
-    })
+    })*/
 
 });
