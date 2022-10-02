@@ -331,6 +331,7 @@ h2 a {
 .slider-button {
     position: fixed;
     width: 70px;
+    top: 50%;
     cursor: pointer;
     z-index: 500;
 }
