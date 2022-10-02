@@ -85,26 +85,26 @@ window.addEventListener("load", () => {
         }
     });
 
-});
-
-/*
-let panels = gsap.utils.toArray("section"),
+    let panels = gsap.utils.toArray("section"),
     scrollTween;
 
-function goToSection(i) {
-  scrollTween = gsap.to(window, {
-    scrollTo: {y: i * innerHeight, autoKill: false},
-    duration: 1,
-    onComplete: () => scrollTween = null,
-    overwrite: true
-  });
-}
+    function goToSection(i) {
+    scrollTween = gsap.to(window, {
+        scrollTo: {y: i * innerHeight, autoKill: false},
+        duration: 1.4,
+        ease: "power2",
+        onComplete: () => scrollTween = null,
+        overwrite: true
+    });
+    }
 
-panels.forEach((panel, i) => {
-  ScrollTrigger.create({
-    trigger: panel,
-    start: "top bottom",
-    end: "+=200%",
-    onToggle: self => self.isActive && !scrollTween && goToSection(i)
-  });
-})*/
+    panels.forEach((panel, i) => {
+    ScrollTrigger.create({
+        trigger: panel,
+        start: "top bottom",
+        end: "+=200%",
+        onToggle: self => self.isActive && !scrollTween && goToSection(i)
+    });
+    })
+
+});
