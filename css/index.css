@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Roboto:wght@500&display=swap');
+
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+    z-index: 1000;
+}
+
+body {
+    background-color: #111;
+    font-family: 'Abyssinica SIL', serif, 'Times New Roman', Times, serif;
+    background: url("../img/pc_bg.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #222 #444;
+}
+
+*::-webkit-scrollbar {
+    width: 10px; 
+  }
+  
+*::-webkit-scrollbar-track {
+    background: #111;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #222; 
+    border-radius: 20px; 
+    border: 2px solid #444; 
+}
+
+section {
+    box-sizing: border-box;
+    min-width: 100%;
+    min-height: 100vh;
+    background-color: #111;
+}
+
+.home {
+    overflow-x: hidden;
+    position: relative;
+    background-color: transparent;
+}
+
+.content-first {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+
+.content-first > h1 {
+    color: #FBFBFD;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif, 'Times New Roman', Times, serif;
+    font-size: 5vw;
+}
+
+.content-first > h2 {
+    color: #FBFBFD;
+    text-transform: uppercase;
+    font-size: 2vw;
+}
+
+.content-first > h1 span {
+    position: relative;
+}
+
+.content-first > h2 span {
+    position: relative;
+}
+
+.container-buttons {
+    position: relative;
+    top: 5vh;
+    display: flex;
+}
+
+
+.btn-first {
+    border : 2px solid #FBFBFD;
+    outline: none;
+    background: transparent;
+    font-size: 3vh;
+    padding: 2vh 4vw;
+    color: #FBFBFD;
+    font-family: 'Abyssinica SIL', serif, 'Times New Roman', Times, serif;
+    cursor: pointer;
+    transition: color 0.4s ease-in-out;
+}
+
+.b1 {
+    margin-right: 30px;
+}
+
+.b2 {
+    margin-right: 30px;
+}
+
+
+.btn-first:hover,
+.btn-first:focus {
+    background-color: #FBFBFD;
+    color: #111;
+}
+
+.lines {
+    position: absolute;
+    top: 6%;
+    left: 5%;
+}
+
+.l1 {
+    width: 250px;
+    height: 3px;
+    background-color: #FBFBFD;
+    border-radius: 5px;
+}
+
+.l2 {
+    width: 150px;
+    height: 3px;
+    background-color: #FBFBFD;
+    border-radius: 5px;
+    position: relative;
+    top: 20px;
+}
+
+.logo {
+    position: absolute;
+    right: 3%;
+    top: 4%;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.logos {
+    list-style-type: none;
+    position: absolute;
+    right: 4.2%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bulle {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.logos-img {
+    width: 65px;
+    width: 65px;
+    border-radius: 10%;
+    border: 4px solid #FBFBFD;
+    background-color: #FBFBFD;
+    transition: 0.3s;
+}
+
+.logos-img:hover {
+    width: 80px;
+    width: 80px;
+    border-radius: 10%;
+    border: 4px solid #FBFBFD;
+    background-color: #FBFBFD;
+}
+
+.title {
+    color: #FBFBFD;
+    text-align: center;
+    font-size: 5vw;
+    padding-top: 50px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif, 'Times New Roman', Times, serif;
+}
+
+.discover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    position: relative;
+}
+
+.wai {
+    position: relative;
+    top: -100px;
+    opacity: 0;
+}
+
+.profile {
+    color: #FBFBFD;
+    text-align: justify;
+    width: 60%;
+    opacity: 0;
+    font-size: 1.8vw;
+}
+
+#education {
+    background-color: #FBFBFD;
+    color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.educationTitle {
+    color: #111;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+.list-education {
+    position: absolute;
+    font-size: 1.2vw;
+    width: 60%;
+    right: 0;
+    margin-top: 100px;
+}
+
+.list-education li {
+    margin-bottom: 20px;
+}
+
+.projects {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.projectsTitle {
+    position: relative;
+    top : -70px;
+}
+
+#slider {
+    width: 1000px;
+    height: 500px;
+    border: solid 2px #FBFBFD;
+    box-shadow: 0 0 10px rgba(255,255,255, 0.5);
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#container-slider {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.project {
+    text-align: center;
+    color: #FBFBFD;
+    background-color: #000;
+    width: 1000px;
+    height: 500px;
+}
+
+.project h1 {
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.project h2 {
+    margin-bottom: 10px;
+}
+
+.boulderdash {
+    width: 700px;;
+}
+
+.wifibot {
+    width: 320px;;
+}
+
+.povray {
+    margin-top: 10px;
+    width: 700px;
+}
+
+.photoshop {
+    width: 250px;
+}
+
+h2 a {
+    text-decoration: none;
+    color: #FBFBFD;
+}
+
+.slider-button {
+    position: fixed;
+    width: 70px;
+    cursor: pointer;
+    z-index: 500;
+}
+
+#leftbtn {
+    left: 10px;
+    transform: rotate(-90deg);
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+}
+#rightbtn {
+    right: 10px;
+    transform: rotate(90deg);
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+}
+
+#leftbtn:hover {
+    opacity: 1;
+}
+#rightbtn:hover {
+    opacity: 1;
+}
+
+
+footer {
+    text-align: center;
+    color: #111;
+    padding: 15px;
+    background-color: #FBFBFD;
+}
+
+
+
+
+
+@media screen and (max-width: 700px) {
+    .content-first > h1 {
+        font-size: 8vw;
+    }
+    
+    .content-first > h2 {
+        font-size: 4.5vw;
+    }
+
+    .container-buttons {
+        flex-direction: column;
+    }
+
+    .btn-first {
+        margin: 15px;
+        width: 150px;
+        padding: 4px;
+    }
+
+    .l1 {
+        width: 150px;
+    }
+
+    .l2 {
+        width: 50px;
+    }
+
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .logos {
+        top: 55%;
+    }
+
+    .bulle {
+        width: 45px;
+        height: 45px;
+    }
+
+    .logos-img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .profile {
+        font-size: 3vw;
+    }
+
+    .list-education {
+        width: 80%;
+        font-size: 3vw;
+        text-align: justify;
+    }
+
+    #slider {
+        width: 280px;
+    }
+
+    .project {
+        width: 280px;
+    }
+
+    .slider-button {
+        width: 50px;
+    }
+
+    .boulderdash {
+        margin-top: 20px;
+        width: 240px;;
+    }
+    
+    .wifibot {
+        margin-top: 20px;
+        width: 200px;;
+    }
+    
+    .povray {
+        margin-top: 20px;
+        width: 240px;
+    }
+    
+    .photoshop {
+        width: 160px;
+    }
+}
+
