@@ -4,48 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Allan Coutarel Portfolio">
-    <link href="css/index.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-device-width: 480px)" href="css/mobile.css" />
     <title>Allan Coutarel</title>
 </head>
+
 <body>
     <preloader></preloader>
 
-        <section class="home">
-            <div class="lines">
-                <div class="l1"></div>
-                <div class="l2"></div>
+    <section class="home">
+        <div class="lines">
+            <div class="l1"></div>
+            <div class="l2"></div>
+        </div>
+
+        <div class="content-first">
+            <h1><span>Allan </span> <span>Coutarel</span></h1>
+            <h2><span>French </span> <span>engineering </span> <span>student</span></h2>
+        
+            <div class="container-buttons">
+                <button class="btn-first b1">Discover</button>
+                <button class="btn-first b2">Education</button>
+                <button class="btn-first b3">Projects</button>
             </div>
+        </div>
 
-            <div class="content-first">
-                <h1><span>Allan </span> <span>Coutarel</span></h1>
-                <h2><span>French </span> <span>engineering </span> <span>student</span></h2>
-            
-                <div class="container-buttons">
-                    <button class="btn-first b1">Discover</button>
-                    <button class="btn-first b2">Education</button>
-                    <button class="btn-first b3">Projects</button>
-                </div>
-            </div>
+        <img class="logo" src="img/pp.png" />
 
-            <img class="logo" src="img/pp.png" />
+        <ul class="logos">
+            <a href="https://github.com/a-coutarel" target="_blank"><li class="bulle"><img class="logos-img" src="img/github.png" alt="github"></li></a>
+            <a href="https://www.linkedin.com/in/allancoutarel/" target="_blank"><li class="bulle"><img class="logos-img" src="img/linkedin.png" alt="linkedin"></li></a>
+            <a href="./CV.pdf" target="_blank"><li class="bulle"><img class="logos-img" src="img/cv.png" alt="CV"></li></a>
+        </ul>
+    </section>
 
-            <ul class="logos">
-                <a href="https://github.com/a-coutarel" target="_blank"><li class="bulle"><img class="logos-img" src="img/github.png" alt="github"></li></a>
-                <a href="https://www.linkedin.com/in/allancoutarel/" target="_blank"><li class="bulle"><img class="logos-img" src="img/linkedin.png" alt="linkedin"></li></a>
-                <a href="./CV.pdf" target="_blank"><li class="bulle"><img class="logos-img" src="img/cv.png" alt="CV"></li></a>
-            </ul>
+    <section class="discover" id="discover">
+        <div class="discover-title-container">
+            <h1 class="discover-title">Who am I ?</h1>
+        </div>
 
-        </section>
+        <div class="discover-profile-container">
+            <p class="discover-profile">Hi, I'm Allan Coutarel and I'm 20 years old. I'm a french engineering student at ESIREM (Graduate School of Digital and Materials Engineering), in Dijon (France). I'm currently in the 2nd year of the Computer science and Electronics engineering cycle, speciality Software and Knowledge Engineer. I am passionate about computers, technology and I also like graphic design and audiovisual. You can contact me at contact@allancoutarel.fr</p>
+        </div>
+    </section>
 
-        <section class="discover" id="discover">
-            <h1 class="title wai">Who am I ?</h1>
-            <p class="profile">Hi, I'm Allan Coutarel and I'm 20 years old. I'm a french engineering student at ESIREM (Graduate School of Digital and Materials Engineering), in Dijon (France). I'm currently in the 2nd year of the Computer science / Electronics engineering cycle, speciality Software and Knowledge Engineer. I am passionate about computers, technology and I also like graphic design and audiovisual. You can contact me at contact@allancoutarel.fr</p>
-        </section>
+    <section class="education" id="education">
+        <div class="education-title-container">
+            <h1 class="education-title">Education</h1>
+        </div>
 
-        <section class="education" id="education">
-            <h1 class="title educationTitle">Education</h1>
-            <ul class="list-education">
+        <div class="education-list-container">
+            <ul class="education-list">
                 <li>
                     <h3>Engineering cycle in Computer Science and Electronics specializing in Software and Knowledge Engineering - 2021 to Today</h3>
                     <p>Graduate School of Digital and Materials Engineering (ESIREM), Dijon (France)</p>
@@ -55,7 +65,7 @@
                     <p>Highest honour – University of Burgundy, Dijon (France)</p>
                 </li>
                 <li>
-                    <h3>Scientific High School diploma- 2019</h3>
+                    <h3>Scientific High School diploma - 2019</h3>
                     <p>Highest honour – Carnot High school, Dijon (France)</p>
                 </li>
                 <li>
@@ -63,28 +73,32 @@
                     <p>Highest honour - Georges Brassens College, Brazey-en-Plaine (France)</p>
                 </li>
             </ul>
-        </section>
+        </div>
+    </section>
 
-        <section class="projects" id="projects">
-            <h1 class="title projectsTitle">Projects</h1>
+    <section class="projects" id="projects">
+        <div class="projects-title-container">
+            <h1 class="projects-title">Projects</h1>
+        </div>
+        <div class="projects-slider-container">
             <div id="slider">
                 <img src="img/arrow.png" class="slider-button" id="leftbtn"/>
                 <div id="container-slider">
-                    <div class="project">
+                    <div class="project-content">
                         <h1>Boulder Dash</h1>
                         <h2>2D Web game made in HTML / CSS / JS</h2>
                         <img class="boulderdash" src="img/boulderdash.jpg" alt="BoulderDash"/>
                     </div>
-                    <div class="project">
+                    <div class="project-content">
                         <h1>Wifi Bot</h1>
                         <h2>Interface made in C++ with QT to control the bot</h2>
                         <img class="wifibot" src="img/wifibot.png" alt="WifiBot"/>
                     </div>
-                    <div class="project">
+                    <div class="project-content">
                         <h1>Chess Game modeling on POV-Ray</h1>
                         <img class="povray" src="img/povray.png" alt="povray"/>
                     </div>
-                    <div class="project">
+                    <div class="project-content">
                         <h1>Graphic design on Photoshop</h1>
                         <h2>See more on my <a href="https://vsco.co/allan-ctrl/gallery" target="_blank">vsco</a></h2>
                         <img class="photoshop" src="img/photoshop.jpg" alt="Photoshop"/>
@@ -92,8 +106,9 @@
                 </div>
                 <img src="img/arrow.png" class="slider-button" id="rightbtn"/>
             </div>
-            <footer><p>© Allan Coutarel - 2022</p></footer>
-        </section>
+        </div>
+        <footer><p>© Allan Coutarel - 2022</p></footer>
+    </section>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>

@@ -1,0 +1,95 @@
+@media screen and (max-width: 480px) {
+    .content-first > h1 {
+        font-size: 8vw;
+    }
+    
+    .content-first > h2 {
+        font-size: 4.5vw;
+    }
+
+    .container-buttons {
+        flex-direction: column;
+    }
+
+    .btn-first {
+        margin: 15px;
+        width: 150px;
+        padding: 4px;
+    }
+
+    .l1 {
+        width: 150px;
+    }
+
+    .l2 {
+        width: 50px;
+    }
+
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .logos {
+        top: 55%;
+    }
+
+    .bulle {
+        width: 45px;
+        height: 45px;
+    }
+
+    .logos-img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .discover-profile {
+        width: 80%;
+        font-size: 5vw;
+    }
+
+    .education-list {
+        width: 80%;
+        font-size: 3vw;
+        text-align: justify;
+    }
+
+    #slider {
+        width: 280px;
+    }
+
+    .project-content {
+        width: 280px;
+    }
+
+    .slider-button {
+        width: 40px;
+    }
+
+    #leftbtn {
+        left: 10px;
+    }
+    #rightbtn {
+        right: 10px;
+    }
+
+    .boulderdash {
+        margin-top: 20px;
+        width: 240px;;
+    }
+    
+    .wifibot {
+        margin-top: 20px;
+        width: 200px;;
+    }
+    
+    .povray {
+        margin-top: 20px;
+        width: 240px;
+    }
+    
+    .photoshop {
+        width: 160px;
+    }
+}

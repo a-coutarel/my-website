@@ -8,22 +8,6 @@ const logos = document.querySelectorAll('.bulle');
 const l1 = document.querySelector('.l1');
 const l2 = document.querySelector('.l2');
 
-/*document.querySelector('.b1').addEventListener("click", () => {
-    var element = document.querySelector("#discover");
-    element.scrollIntoView({ behavior: 'smooth', block: 'end'});
-});
-
-document.querySelector('.b2').addEventListener("click", () => {
-    var element = document.querySelector("#education");
-    element.scrollIntoView({ behavior: 'smooth', block: 'end'});
-});
-
-document.querySelector('.b3').addEventListener("click", () => {
-    var element = document.querySelector("#projects");
-    element.scrollIntoView({ behavior: 'smooth', block: 'end'});
-});*/
-
-
 
 window.addEventListener("load", () => {
     $("preloader").delay(400).fadeOut('slow');
@@ -52,19 +36,13 @@ window.addEventListener("load", () => {
     
     setTimeout( () => {TL.play()}, 600);
 
-    //gsap.to(".home", {scrollTrigger: {trigger: ".home", start: "top top", pin: true, pinSpacing: false}});
-    //gsap.to(".discover", {scrollTrigger: {trigger: ".discover", start: "top top", pin: true, pinSpacing: false}});
-    //gsap.to(".education", {scrollTrigger: {trigger: ".education", start: "top top", pin: true, pinSpacing: false}});
-    //gsap.to(".projects", {scrollTrigger: {trigger: ".projects", start: "top top", pin: true, pinSpacing: false}});
-    //gsap.to("footer", {scrollTrigger: {trigger: "footer", start: "top top", pin: true, pinSpacing: false}});
-
     
-    gsap.to(".wai", {scrollTrigger: {trigger: ".wai", toggleActions: "restart pause resume pause"}, opacity: 1, duration: 1.8, ease: "power2"});
-    gsap.to(".profile", {scrollTrigger: {trigger: ".profile", toggleActions: "restart pause resume pause"}, opacity: 1, duration: 2, ease: "power2"});
+    gsap.to(".discover-title", {scrollTrigger: {trigger: ".discover-title", start: "top bottom", toggleActions: "restart pause resume pause"}, opacity: 1, duration: 1.8, ease: "power2"});
+    gsap.to(".discover-profile", {scrollTrigger: {trigger: ".discover-profile", start: "top bottom", toggleActions: "restart pause resume pause"}, opacity: 1, duration: 2, ease: "power2"});
     
     
-    gsap.to(".educationTitle", {scrollTrigger: {trigger: ".educationTitle", toggleActions: "restart pause resume pause", end: "bottom center", scrub: 1}, left:"50%", xPercent:-50, ease: "power2"});
-    gsap.to(".list-education", {scrollTrigger: {trigger: ".list-education", toggleActions: "restart pause resume pause", end: "top center", scrub: 1}, right:"50%", xPercent:50, ease: "power2"});
+    gsap.to(".education-title", {scrollTrigger: {trigger: ".education-title", toggleActions: "restart pause resume pause", start: "top bottom", end: "bottom center", scrub: 1}, left:"50%", xPercent:-50, ease: "power2"});
+    gsap.to(".education-list", {scrollTrigger: {trigger: ".education-list", toggleActions: "restart pause resume pause", start: "top bottom", end: "top center", scrub: 1}, right:"50%", xPercent:50, ease: "power2"});
 
 
     gsap.to(".projects", {scrollTrigger: {trigger: ".projects", start:"200px bottom", end: "-200px top", toggleActions: "restart pause resume pause", scrub: 3}, opacity: 1, ease: "power2"});
@@ -74,14 +52,14 @@ window.addEventListener("load", () => {
     document.querySelector('#leftbtn').addEventListener("click", () => {
         if(nb>0) {
             nb--;
-            document.querySelector("#container-slider").style.transform = "translate("+(-nb*document.querySelector(".project").offsetWidth)+"px)";
+            document.querySelector("#container-slider").style.transform = "translate("+(-nb*document.querySelector(".project-content").offsetWidth)+"px)";
         }
     });
 
     document.querySelector('#rightbtn').addEventListener("click", () => {
         if(nb<3) {    
             nb++;
-            document.querySelector("#container-slider").style.transform = "translate("+(-nb*document.querySelector(".project").offsetWidth)+"px)";
+            document.querySelector("#container-slider").style.transform = "translate("+(-nb*document.querySelector(".project-content").offsetWidth)+"px)";
         }
     });
 
@@ -94,6 +72,12 @@ window.addEventListener("load", () => {
           pinSpacing: false 
         });
       });
+
+    //gsap.to(".home", {scrollTrigger: {trigger: ".home", start: "top top", pin: true, pinSpacing: false}});
+    //gsap.to(".discover", {scrollTrigger: {trigger: ".discover", start: "top top", pin: true, pinSpacing: false}});
+    //gsap.to(".education", {scrollTrigger: {trigger: ".education", start: "top top", pin: true, pinSpacing: false}});
+    //gsap.to(".projects", {scrollTrigger: {trigger: ".projects", start: "top top", pin: true, pinSpacing: false}});
+    //gsap.to("footer", {scrollTrigger: {trigger: "footer", start: "top top", pin: true, pinSpacing: false}});
       
       ScrollTrigger.create({
         snap: {
