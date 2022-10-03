@@ -99,7 +99,8 @@ window.addEventListener("load", () => {
         snap: {
             snapTo: 1 / (4 - 1),
             duration: 1,
-            ease: "circ"
+            delay: 0,
+            ease: "circ.inOut"
           }
       });
 
