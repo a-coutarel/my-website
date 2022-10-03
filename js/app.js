@@ -52,11 +52,11 @@ window.addEventListener("load", () => {
     
     setTimeout( () => {TL.play()}, 600);
 
-    gsap.to(".home", {scrollTrigger: {trigger: ".home", start: "top top", pin: true, pinSpacing: false}});
-    gsap.to(".discover", {scrollTrigger: {trigger: ".discover", start: "top top", pin: true, pinSpacing: false}});
-    gsap.to(".education", {scrollTrigger: {trigger: ".education", start: "top top", pin: true, pinSpacing: false}});
-    gsap.to(".projects", {scrollTrigger: {trigger: ".projects", start: "top top", pin: true, pinSpacing: false}});
-    gsap.to("footer", {scrollTrigger: {trigger: "footer", start: "top top", pin: true, pinSpacing: false}});
+    //gsap.to(".home", {scrollTrigger: {trigger: ".home", start: "top top", pin: true, pinSpacing: false}});
+    //gsap.to(".discover", {scrollTrigger: {trigger: ".discover", start: "top top", pin: true, pinSpacing: false}});
+    //gsap.to(".education", {scrollTrigger: {trigger: ".education", start: "top top", pin: true, pinSpacing: false}});
+    //gsap.to(".projects", {scrollTrigger: {trigger: ".projects", start: "top top", pin: true, pinSpacing: false}});
+    //gsap.to("footer", {scrollTrigger: {trigger: "footer", start: "top top", pin: true, pinSpacing: false}});
 
     
     gsap.to(".wai", {scrollTrigger: {trigger: ".wai", toggleActions: "restart pause resume pause"}, opacity: 1, duration: 1.8, ease: "power2"});
@@ -85,26 +85,22 @@ window.addEventListener("load", () => {
         }
     });
 
-    let panels = gsap.utils.toArray("section"),
-    scrollTween;
-
-    /*function goToSection(i) {
-    scrollTween = gsap.to(window, {
-        scrollTo: {y: i * innerHeight, autoKill: false},
-        duration: 1.4,
-        ease: "power2",
-        onComplete: () => scrollTween = null,
-        overwrite: true
-    });
-    }
-
-    panels.forEach((panel, i) => {
-    ScrollTrigger.create({
-        trigger: panel,
-        start: "top bottom",
-        end: "+=200%",
-        onToggle: self => self.isActive && !scrollTween && goToSection(i)
-    });
-    })*/
+    
+    gsap.utils.toArray("section").forEach((panel, i) => {
+        ScrollTrigger.create({
+          trigger: panel,
+          start: "top top", 
+          pin: true, 
+          pinSpacing: false 
+        });
+      });
+      
+      ScrollTrigger.create({
+        snap: {
+            snapTo: 1 / (4 - 1),
+            duration: 1,
+            ease: "circ"
+          }
+      });
 
 });
