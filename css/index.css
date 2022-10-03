@@ -128,8 +128,7 @@ h2 a {
     margin-right: 30px;
 }
 
-.btn-first:hover,
-.btn-first:focus {
+.btn-first:hover {
     background-color: #FBFBFD;
     color: #111;
 }
