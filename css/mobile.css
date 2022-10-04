@@ -1,10 +1,45 @@
 @media screen and (max-width: 480px) {
+    
+    .home {
+        flex-direction: column;
+    }
+
+    .home-content-container {
+        width: 100vw;
+        height: 85vh;
+    }
+
+    .lines-container {
+        width: 100vw;
+    }
+
+    .content-first {
+        width: 100vw;
+        height: 75vh;
+    }
+
+    .logos-container {
+        justify-content: center;
+        align-items: center;
+        height: 15vh;
+        width: 100vw;
+        padding: 0;
+    }
+
+    .l1 {
+        height: 0.6vh;
+    }
+
+    .l2 {
+       height: 0.6vh;
+    }
+
     .content-first > h1 {
-        font-size: 8vw;
+        font-size: 15vw;
     }
     
     .content-first > h2 {
-        font-size: 4.5vw;
+        font-size: 8.5vw;
     }
 
     .container-buttons {
@@ -12,36 +47,41 @@
     }
 
     .btn-first {
-        margin: 15px;
-        width: 150px;
-        padding: 4px;
+        margin: 1.5vh 0;
+        width: 40vw;
+        padding: 1vh;
+        font-size: 6vw;
     }
 
-    .l1 {
-        width: 150px;
+    .pp-container {
+        position: fixed;
+        right: 4vw;
+        top: 4vw;
     }
 
-    .l2 {
-        width: 50px;
-    }
-
-    .logo {
-        width: 70px;
-        height: 70px;
+    .pp {
+        width: 22vw;
+        height: 22vw;
     }
 
     .logos {
-        top: 55%;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
     }
 
     .bulle {
-        width: 45px;
-        height: 45px;
+        width: 15vw;
+        height: 15vw;
     }
 
     .logos-img {
-        width: 45px;
-        height: 45px;
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .discover-title {
+        font-size: 12vw;
     }
 
     .discover-profile {
@@ -49,47 +89,69 @@
         font-size: 5vw;
     }
 
+    .education-title {
+        font-size: 12vw;
+    }
+
     .education-list {
         width: 80%;
-        font-size: 3vw;
+        font-size: 3.5vw;
         text-align: justify;
     }
 
+    .projects-title {
+        font-size: 12vw;
+    }
+
     #slider {
-        width: 280px;
+        width: 70vw;
+        height: 60vh;
+    }
+
+    #container-slider {
+        height: 60vh;
     }
 
     .project-content {
-        width: 280px;
+        width: 70vw;
+        height: 60vh;
     }
 
-    .slider-button {
-        width: 40px;
+    .project-content h1 {
+        font-size: 9vw;
+        margin: 0 2vw;
     }
-
-    #leftbtn {
-        left: 10px;
-    }
-    #rightbtn {
-        right: 10px;
+    
+    .project-content h2 {
+        font-size: 5.5vw;
+        margin: 0 2vw;
+        margin-bottom: 2vh;
     }
 
     .boulderdash {
-        margin-top: 20px;
-        width: 240px;;
+        width: 65vw;
     }
     
     .wifibot {
-        margin-top: 20px;
-        width: 200px;;
+        width: 60vw;
     }
     
     .povray {
-        margin-top: 20px;
-        width: 240px;
+        width: 65vw;
     }
     
     .photoshop {
-        width: 160px;
+        width: 45vw;
+    }
+
+    .slider-button {
+        width: 12vw;
+    }
+
+    #leftbtn {
+        left: 1vw;
+    }
+    #rightbtn {
+        right: 1vw;
     }
 }
