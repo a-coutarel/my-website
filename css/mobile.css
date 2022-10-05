@@ -2,7 +2,7 @@
     
     .home {
         flex-direction: column;
-        padding-bottom: env(safe-area-inset-bottom, 0px);
+        min-height: calc(100vh - env(safe-area-inset-bottom));
     }
 
     .home-content-container {
@@ -11,12 +11,13 @@
     }
 
     .lines-container {
+        height: 10%;
         width: 100vw;
     }
 
     .content-first {
         width: 100vw;
-        height: 100%;
+        height: 90%;
     }
 
     .logos-container {
