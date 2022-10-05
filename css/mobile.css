@@ -2,12 +2,12 @@
     
     .section {
         min-height: 100vh;
-        min-height: -webkit-fill-available;
+        min-height: calc(var(--vh, 1vh) * 100);
     }
 
     .home {
         flex-direction: column;
-        background-color: red;
+        background-color: green;
     }
 
     .home-content-container {
