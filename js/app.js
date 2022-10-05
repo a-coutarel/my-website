@@ -45,11 +45,6 @@ window.addEventListener("load", () => {
     
     setTimeout( () => {TL.play()}, 600);
 
-    $(window).resize(function() {
-        l1.style.width = "25vw";
-        l2.style.width = "18vw";
-    });
-
 
 
 
@@ -104,13 +99,21 @@ window.addEventListener("load", () => {
     //gsap.to(".education", {scrollTrigger: {trigger: ".education", start: "top top", pin: true, pinSpacing: false}});
     //gsap.to(".projects", {scrollTrigger: {trigger: ".projects", start: "top top", pin: true, pinSpacing: false}});
     //gsap.to("footer", {scrollTrigger: {trigger: "footer", start: "top top", pin: true, pinSpacing: false}});
-      
-    ScrollTrigger.create({
-    snap: {
-        snapTo: 1 / (4 - 1),
-        duration: 1.2,
-        delay: 0,
-        ease: "circ.Out"
+
+
+    $(window).resize(function() {
+        l1.style.width = "25vw";
+        l2.style.width = "18vw";
+
+        if (window.matchMedia("(min-width: 481px)").matches) {
+            ScrollTrigger.create({
+                snap: {
+                    snapTo: 1 / (4 - 1),
+                    duration: 1.2,
+                    delay: 0,
+                    ease: "circ.Out"
+                    }
+                });
         }
     });
 
