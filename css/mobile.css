@@ -2,7 +2,6 @@
 
     .home {
         flex-direction: column;
-        padding-bottom: 12vh;
     }
 
     .home-content-container {
@@ -78,6 +77,11 @@
     }
 
     .logos-img {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .logos-img:hover {
         width: 15vw;
         height: 15vw;
     }
