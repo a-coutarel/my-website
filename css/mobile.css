@@ -1,8 +1,13 @@
 @media screen and (max-width: 480px) {
     
+    .section {
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
+    }
+
     .home {
         flex-direction: column;
-        min-height: calc(100vh - env(safe-area-inset-bottom));
+        background-color: red;
     }
 
     .home-content-container {
