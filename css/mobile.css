@@ -1,13 +1,8 @@
 @media screen and (max-width: 480px) {
-    
-    .section {
-        min-height: 100vh;
-        min-height: calc(var(--vh, 1vh) * 100);
-    }
 
     .home {
         flex-direction: column;
-        background-color: green;
+        padding-bottom: 12vh;
     }
 
     .home-content-container {
