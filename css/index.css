@@ -64,6 +64,11 @@ h2 a {
     color: #FBFBFD;
 }
 
+p a {
+    text-decoration: none;
+    color: #FBFBFD;
+}
+
 
 
 
@@ -191,6 +196,7 @@ h2 a {
     height: 7vw;
     border-radius: 50%;
     position: relative;
+    cursor: pointer;
 }
 
 .logos {
@@ -265,7 +271,6 @@ h2 a {
     opacity: 0;
     color: #FBFBFD;
     text-align: justify;
-    word-spacing: -0.8vw;
     font-size: 2vw;
     width: 60%;
 }
@@ -409,6 +414,10 @@ h2 a {
 
 .photoshop {
     width: 13vw;
+}
+
+.website {
+    width: 40vw;
 }
 
 .slider-button {

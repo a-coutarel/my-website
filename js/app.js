@@ -9,6 +9,10 @@ window.addEventListener("load", () => {
 
 
 
+    document.querySelector('.pp').addEventListener("click", () => {
+        gsap.to(window, {duration: 1, scrollTo: {y: "#discover"}, ease: "power2"});
+    });
+
     document.querySelector('.b1').addEventListener("click", () => {
         gsap.to(window, {duration: 1, scrollTo: {y: "#discover"}, ease: "power2"});
     });
@@ -75,7 +79,7 @@ window.addEventListener("load", () => {
     });
 
     document.querySelector('#rightbtn').addEventListener("click", () => {
-        if(nb<3) {    
+        if(nb<4) {    
             nb++;
             document.querySelector("#container-slider").style.transform = "translate("+(-nb*document.querySelector(".project-content").offsetWidth)+"px)";
         }
@@ -101,6 +105,17 @@ window.addEventListener("load", () => {
     //gsap.to("footer", {scrollTrigger: {trigger: "footer", start: "top top", pin: true, pinSpacing: false}});
 
 
+    if (window.matchMedia("(min-width: 481px)").matches) {
+        ScrollTrigger.create({
+            snap: {
+                snapTo: 1 / (4 - 1),
+                duration: 1.2,
+                delay: 0,
+                ease: "circ.Out"
+                }
+        });
+    }
+
     $(window).resize(function() {
         l1.style.width = "25vw";
         l2.style.width = "18vw";
@@ -113,7 +128,7 @@ window.addEventListener("load", () => {
                     delay: 0,
                     ease: "circ.Out"
                     }
-                });
+            });
         }
     });
 
