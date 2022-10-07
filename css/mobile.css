@@ -145,6 +145,10 @@
     .povray {
         width: 65vw;
     }
+
+    .werewolf {
+        width: 50vw;
+    }
     
     .photoshop {
         width: 45vw;
@@ -152,6 +156,14 @@
 
     .website {
         width: 65vw;
+    }
+
+    .blender {
+        width: 60vw;
+    }
+
+    .unity {
+        width: 62vw;
     }
 
     .slider-button {

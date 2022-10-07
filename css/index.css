@@ -404,12 +404,15 @@ p a {
 }
 
 .wifibot {
-    width: 16vw;
+    width: 30vw;
 }
 
 .povray {
-    margin-top: 2vh;
-    width: 38vw;
+    width: 32vw;
+}
+
+.werewolf {
+    width: 18vw;
 }
 
 .photoshop {
@@ -418,6 +421,14 @@ p a {
 
 .website {
     width: 40vw;
+}
+
+.blender {
+    width: 25vw;
+}
+
+.unity {
+    width: 35vw;
 }
 
 .slider-button {
