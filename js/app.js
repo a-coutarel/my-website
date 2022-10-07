@@ -36,6 +36,7 @@ window.addEventListener("load", () => {
     const logos = document.querySelectorAll('.bulle'); 
     const l1 = document.querySelector('.l1');
     const l2 = document.querySelector('.l2');
+    const mouse = document.querySelector('.mousey');
 
     let TL = gsap.timeline({paused: true});
 
@@ -46,6 +47,7 @@ window.addEventListener("load", () => {
     TL.from(l2, 2.5, {width: 0, ease: "power2.but"}, '');
     TL.from(pp, 3, {left: -100 +"vw", opacity: 0, rotate: -360, ease: "power2.inOut"}, '-=3.5');
     TL.staggerFrom(logos, 2, {right: -100 +"vw", ease: "circ.out"}, 0.3, '-=1.6');
+    TL.staggerFrom(mouse, 3, {bottom: -100 +"vh", ease: "circ.out"}, 0.3, '-=1.8');
     
     setTimeout( () => {TL.play()}, 600);
 

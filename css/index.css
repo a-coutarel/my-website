@@ -233,6 +233,37 @@ p a {
     height: 5vw;
 }
 
+.mousey {
+    position: fixed;
+    bottom: 4vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0.2vw;
+    padding: 0.4vw 0.8vw;
+    height: 1.8vw;
+    border: 0.15vw solid #FBFBFD;
+    border-radius: 35%;
+    opacity: 0.75;
+    box-sizing: content-box;
+  }
+
+  .scroller {
+    width: 0.2vw;
+    height: 0.4vw;
+    border-radius: 25%;
+    background-color: #FBFBFD;
+    animation-name: scroll;
+    animation-duration: 2.5s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(0.8vh); opacity: 0;}
+  }
+
 
 
 
