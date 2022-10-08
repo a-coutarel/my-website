@@ -184,4 +184,9 @@
     #rightbtn {
         right: 1vw;
     }
+
+    .backbutton {
+        display: none;
+    }
+
 }

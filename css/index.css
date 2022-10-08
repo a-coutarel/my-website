@@ -505,3 +505,11 @@ footer {
     align-items: center;
     background-color: #FBFBFD;
 }
+
+.backbutton {
+    width: 4vh;
+    background-color: #111;
+    position: fixed;
+    right: 1vw;
+    cursor: pointer;
+}

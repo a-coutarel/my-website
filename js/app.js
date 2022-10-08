@@ -25,6 +25,10 @@ window.addEventListener("load", () => {
         gsap.to(window, {duration: 1.5, scrollTo: {y: "#projects"}, ease: "power2"});
     });
 
+    document.querySelector('.backbutton').addEventListener("click", () => {
+        gsap.to(window, {duration: 1.5, scrollTo: {y: "0"}, ease: "power2"});
+    });
+
 
 
 
