@@ -430,8 +430,12 @@ p a {
     margin-bottom: 3vh;
 }
 
+.project-content h4 {
+    font-size: 1vw;
+}
+
 .boulderdash {
-    width: 40vw;
+    width: 36vw;
 }
 
 .wifibot {
