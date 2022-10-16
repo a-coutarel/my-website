@@ -119,16 +119,19 @@
 
     #slider {
         width: 70vw;
-        height: 60vh;
+        min-height: 60vh;
+        max-height: 74vh;
     }
 
     #container-slider {
-        height: 60vh;
+        min-height: 60vh;
+        max-height: 74vh;
     }
 
     .project-content {
         width: 70vw;
-        height: 60vh;
+        min-height: 60vh;
+        max-height: 74vh;
     }
 
     .project-content h1 {
@@ -140,6 +143,10 @@
         font-size: 5.5vw;
         margin: 0 2vw;
         margin-bottom: 2vh;
+    }
+
+    .project-content h4 {
+        font-size: 3.5vw;
     }
 
     .boulderdash {
