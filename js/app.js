@@ -85,7 +85,7 @@ window.addEventListener("load", () => {
     });
 
     document.querySelector('#rightbtn').addEventListener("click", () => {
-        if(nb<7) {    
+        if(nb<8) {    
             nb++;
             document.querySelector("#container-slider").style.transform = "translate("+(-nb*document.querySelector(".project-content").offsetWidth)+"px)";
         }
