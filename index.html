@@ -8,6 +8,8 @@
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <link href="css/index.css" rel="stylesheet" />
     <link rel="stylesheet" media="screen and (max-width: 480px)" href="css/mobile.css" />
+    <link rel="stylesheet" href="./js/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./js/owlcarousel/assets/owl.theme.default.min.css">
     <title>Allan Coutarel</title>
 </head>
 
@@ -91,71 +93,68 @@
         <div class="projects-title-container">
             <h1 class="projects-title">Projects</h1>
         </div>
-        <div class="projects-slider-container">
-            <div id="slider">
-                <img src="img/arrow.png" class="slider-button" id="leftbtn"/>
-                <div id="container-slider">
-                    <div class="project-content">
-                        <h1>Boulder Dash</h1>
-                        <h2>2D Web game made with HTML / CSS / JS</h2>
-                        <a href="https://a-coutarel.github.io/BoulderDash/" target="_blank"><img class="boulderdash" src="img/boulderdash.jpg" alt="BoulderDash"/></a>
-                        <h4>Click on the image to see more</h4>
-                    </div>
-                    <div class="project-content">
-                        <h1>Image Processing Application</h1>
-                        <h2>HTML, CSS, JS</h2>
-                        <a href="https://image-processing.allancoutarel.fr"><img class="image-proc" src="img/image_processing.png" alt="image processing"/></a>
-                        <h4>Click on the image to see more</h4>
-                    </div>
-                    <div class="project-content">
-                        <h1>This website</h1>
-                        <h2>HTML, CSS, JS with Greensock library</h2>
-                        <a href="https://github.com/a-coutarel/my-website" target="_blank"><img class="website" src="img/website.jpg" alt="my website"/></a>
-                        <h4>Click on the image to see more</h4>
-                    </div>
-                    <div class="project-content">
-                        <h1>To Do List Application</h1>
-                        <h2>XCODE, Swift</h2>
-                        <a ><img class="swift" src="img/swift_app.png" alt="swift app"/></a>
-                    </div>
-                    <div class="project-content">
-                        <h1>Wifi Bot</h1>
-                        <h2>Application with C++ & QT to control a bot</h2>
-                        <a href="https://github.com/a-coutarel/WifiBot" target="_blank"><img class="wifibot" src="img/wifibot.png" alt="WifiBot"/></a>
-                        <h4>Click on the image to see more</h4>
-                    </div>
-                    <div class="project-content">
-                        <h1>Chess Game modeling on POV-Ray</h1>
-                        <h2>Full modeling, small animation, use of Bézier curves</h2>
-                        <a href="https://github.com/a-coutarel/Chess-modeling-on-PovRay" target="_blank"><img class="povray" src="img/povray.png" alt="povray"/></a>
-                        <h4>Click on the image to see more</h4>
-                    </div>
-                    <div class="project-content">
-                        <h1>Werewolf game on Java</h1>
-                        <h2>MVC architecture (no interface for the moment)</h2>
-                        <a href="https://github.com/a-coutarel/werewolf" target="_blank"><img class="werewolf" src="img/werewolf.jpg" alt="werewolf"/></a>
-                        <h4>Click on the image to see more</h4>
-                    </div>
-                    <div class="project-content">
-                        <h1>Graphic designs on Photoshop</h1>
-                        <h2>See more on my <a href="https://vsco.co/allan-ctrl/gallery" target="_blank">vsco</a></h2>
-                        <a href="https://vsco.co/allan-ctrl/gallery" target="_blank"><img class="photoshop" src="img/photoshop.jpg" alt="Photoshop"/></a>
-                        <h4>Click on the image to see more</h4>
-                    </div>
-                    <div class="project-content">
-                        <h1>Submarine and Torpedo modeling on Blender</h1>
-                        <h2>Little modeling for a Unity game</h2>
-                        <img class="blender" src="img/blender.png" alt="blender"/>
-                    </div>
-                    <div class="project-content">
-                        <h1>Interfaces for a Unity game</h1>
-                        <h2>Interface design and participation in game development</h2>
-                        <img class="unity" src="img/unity.jpg" alt="unity"/>
-                    </div>
+        <div class="carousel">
+            <div class="owl-carousel owl-theme">
+                <div class="project-content boulderdash">
+                    <h1>Boulder Dash</h1>
+                    <h2>2D Web game made with HTML / CSS / JS</h2>
+                    <a href="https://a-coutarel.github.io/BoulderDash/" target="_blank"><img src="img/boulderdash.jpg" alt="BoulderDash"/></a>
+                    <h4>Click on the image to see more</h4>
                 </div>
-                <img src="img/arrow.png" class="slider-button" id="rightbtn"/>
+                <div class="project-content image-proc">
+                    <h1>Image Processing Application</h1>
+                    <h2>HTML, CSS, JS</h2>
+                    <a href="https://image-processing.allancoutarel.fr"><img src="img/image_processing.png" alt="image processing"/></a>
+                    <h4>Click on the image to see more</h4>
+                </div>
+                <div class="project-content website">
+                    <h1>This website</h1>
+                    <h2>HTML, CSS, JS with Greensock library</h2>
+                    <a href="https://github.com/a-coutarel/my-website" target="_blank"><img src="img/website.jpg" alt="my website"/></a>
+                    <h4>Click on the image to see more</h4>
+                </div>
+                <div class="project-content swift">
+                    <h1>To Do List Application</h1>
+                    <h2>XCODE, Swift</h2>
+                    <a ><img src="img/swift_app.png" alt="swift app"/></a>
+                </div>
+                <div class="project-content wifibot">
+                    <h1>Wifi Bot</h1>
+                    <h2>Application with C++ & QT to control a bot</h2>
+                    <a href="https://github.com/a-coutarel/WifiBot" target="_blank"><img src="img/wifibot.png" alt="WifiBot"/></a>
+                    <h4>Click on the image to see more</h4>
+                </div>
+                <div class="project-content povray">
+                    <h1>Chess Game modeling on POV-Ray</h1>
+                    <h2>Full modeling, small animation, use of Bézier curves</h2>
+                    <a href="https://github.com/a-coutarel/Chess-modeling-on-PovRay" target="_blank"><img src="img/povray.png" alt="povray"/></a>
+                    <h4>Click on the image to see more</h4>
+                </div>
+                <div class="project-content werewolf">
+                    <h1>Werewolf game on Java</h1>
+                    <h2>MVC architecture (no interface for the moment)</h2>
+                    <a href="https://github.com/a-coutarel/werewolf" target="_blank"><img src="img/werewolf.jpg" alt="werewolf"/></a>
+                    <h4>Click on the image to see more</h4>
+                </div>
+                <div class="project-content photoshop">
+                    <h1>Graphic designs on Photoshop</h1>
+                    <h2>See more on my <a href="https://vsco.co/allan-ctrl/gallery" target="_blank">vsco</a></h2>
+                    <a href="https://vsco.co/allan-ctrl/gallery" target="_blank"><img src="img/photoshop.jpg" alt="Photoshop"/></a>
+                    <h4>Click on the image to see more</h4>
+                </div>
+                <div class="project-content blender">
+                    <h1>Submarine and Torpedo modeling on Blender</h1>
+                    <h2>Little modeling for a Unity game</h2>
+                    <img src="img/blender.png" alt="blender"/>
+                </div>
+                <div class="project-content unity">
+                    <h1>Interfaces for a Unity game</h1>
+                    <h2>Interface design and participation in game development</h2>
+                    <img src="img/unity.jpg" alt="unity"/>
+                </div>
             </div>
         </div>
+          
         <div>
             <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
@@ -179,7 +178,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollToPlugin3.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="js/owlcarousel/jquery-3.6.3.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="./js/owlcarousel/owl.carousel.min.js"></script>
 </body>
 </html>

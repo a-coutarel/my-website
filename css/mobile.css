@@ -117,21 +117,32 @@
         font-size: 12vw;
     }
 
-    #slider {
-        width: 70vw;
-        min-height: 60vh;
-        max-height: 74vh;
+    .carousel {
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-
-    #container-slider {
-        min-height: 60vh;
-        max-height: 74vh;
+    
+    .owl-carousel-stage-outer {
+        height: 73vh;
     }
-
+    
+    .owl-dots {
+        height: 2vw;
+    }
+    
     .project-content {
-        width: 70vw;
-        min-height: 60vh;
-        max-height: 74vh;
+        text-align: center;
+        color: #FBFBFD;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 1vh 2vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 60vh;
+        width: 100vw;
     }
 
     .project-content h1 {
@@ -148,56 +159,55 @@
     .project-content h4 {
         font-size: 3.5vw;
     }
-
-    .boulderdash {
-        width: 65vw;
-    }
-
-    .swift {
-        width: 60vw;
+    
+    .boulderdash img {
+        max-width: 80%;
+        margin: 0 auto;
     }
     
-    .wifibot {
-        width: 60vw;
+    .image-proc img {
+        max-width: 80%;
+        margin: 0 auto;
     }
     
-    .povray {
-        width: 65vw;
-    }
-
-    .werewolf {
-        width: 50vw;
+    .website img {
+        max-width: 85%;
+        margin: 0 auto;
     }
     
-    .photoshop {
-        width: 45vw;
+    .swift img {
+        max-width: 68%;
+        margin: 0 auto;
     }
-
-    .website {
-        width: 65vw;
+    
+    .wifibot img {
+        max-width: 80%;
+        margin: 0 auto;
     }
-
-    .blender {
-        width: 60vw;
+    
+    .povray img {
+        max-width: 80%;
+        margin: 0 auto;
     }
-
-    .unity {
-        width: 62vw;
+    
+    .werewolf img {
+        max-width: 50%;
+        margin: 0 auto;
     }
-
-    .image-proc {
-        width: 65vw;
+    
+    .photoshop img {
+        max-width: 40%;
+        margin: 0 auto;
     }
-
-    .slider-button {
-        width: 12vw;
+    
+    .blender img {
+        max-width: 75%;
+        margin: 0 auto;
     }
-
-    #leftbtn {
-        left: 1vw;
-    }
-    #rightbtn {
-        right: 1vw;
+    
+    .unity img {
+        max-width: 85%;
+        margin: 0 auto;
     }
 
     .backbutton {

@@ -383,14 +383,6 @@ p a {
     justify-content: center;
 }
 
-.projects-slider-container {
-    height: 75vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .projects-title {
     color: #FBFBFD;
     font-size: 5vw;
@@ -399,121 +391,98 @@ p a {
     align-self: flex-end;
 }
 
-#slider {
-    width: 60vw;
-    min-height: 60vh;
-    max-height: 74vh;
-    border: solid 0.2vw #FBFBFD;
-    box-shadow: 0 0 0.5vw rgba(255,255,255, 0.5);
-    position: relative;
+.carousel {
+    height: 75vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    justify-content: center;
 }
 
-#container-slider {
-    min-height: 60vh;
-    max-height: 74vh;
-    display: flex;
-    align-items: center;
-    transition: all 0.5s ease-in-out;
+.owl-carousel-stage-outer {
+    height: 73vh;
+}
+
+.owl-dots {
+    height: 2vw;
 }
 
 .project-content {
     text-align: center;
     color: #FBFBFD;
-    background-color: #000;
-    width: 60vw;
-    min-height: 60vh;
-    max-height: 74vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 1vh 2vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    height: 60vh;
+    width: 45vw;
 }
 
 .project-content h1 {
-    font-size: 3vw;
+    font-size: 2.5vw;
 }
 
 .project-content h2 {
-    font-size: 2vw;
-    margin-bottom: 3vh;
+    font-size: 1.2vw;
+    margin: 2vh 0;
 }
 
 .project-content h4 {
+    margin-top: .6vh;
     font-size: 1vw;
 }
 
-.boulderdash {
-    width: 36vw;
+.boulderdash img {
+    max-width: 90%;
+    margin: 0 auto;
 }
 
-.swift {
-    width: 20vw;
+.image-proc img {
+    max-width: 90%;
+    margin: 0 auto;
 }
 
-.wifibot {
-    width: 30vw;
+.website img {
+    max-width: 90%;
+    margin: 0 auto;
 }
 
-.povray {
-    width: 32vw;
+.swift img {
+    max-width: 48%;
+    margin: 0 auto;
 }
 
-.werewolf {
-    width: 18vw;
+.wifibot img {
+    max-width: 80%;
+    margin: 0 auto;
 }
 
-.photoshop {
-    width: 13vw;
+.povray img {
+    max-width: 80%;
+    margin: 0 auto;
 }
 
-.website {
-    width: 35vw;
+.werewolf img {
+    max-width: 45%;
+    margin: 0 auto;
 }
 
-.blender {
-    width: 25vw;
+.photoshop img {
+    max-width: 31%;
+    margin: 0 auto;
 }
 
-.unity {
-    width: 35vw;
+.blender img {
+    max-width: 68%;
+    margin: 0 auto;
 }
 
-.image-proc {
-    width: 35vw;
+.unity img {
+    max-width: 85%;
+    margin: 0 auto;
 }
 
-.slider-button {
-    position: fixed;
-    width: 8vw;
-    margin: auto 0;
-    cursor: pointer;
-    z-index: 500;
-}
-
-#leftbtn {
-    left: 10vw;
-    transform: rotate(-90deg);
-    opacity: 0.5;
-    transition: all 0.3s ease-in-out;
-}
-
-#rightbtn {
-    right: 10vw;
-    transform: rotate(90deg);
-    opacity: 0.5;
-    transition: all 0.3s ease-in-out;
-}
-
-#leftbtn:hover {
-    opacity: 1;
-}
-#rightbtn:hover {
-    opacity: 1;
-}
 
 
 

@@ -6,9 +6,6 @@ window.addEventListener("load", () => {
     $("preloader").delay(400).fadeOut('slow');
 
 
-
-
-
     document.querySelector('.pp').addEventListener("click", () => {
         gsap.to(window, {duration: 1, scrollTo: {y: "#discover"}, ease: "power2"});
     });
@@ -28,9 +25,6 @@ window.addEventListener("load", () => {
     document.querySelector('.backbutton').addEventListener("click", () => {
         gsap.to(window, {duration: 1.5, scrollTo: {y: "0"}, ease: "power2"});
     });
-
-
-
 
     
     const titreSpansH1 = document.querySelectorAll('h1 span');
@@ -56,45 +50,15 @@ window.addEventListener("load", () => {
     setTimeout( () => {TL.play()}, 600);
 
 
-
-
-
     gsap.to(".discover-title", {scrollTrigger: {trigger: ".discover-title", start: "top bottom", toggleActions: "restart pause resume pause"}, opacity: 1, duration: 1.8, ease: "power2"});
     gsap.to(".discover-profile", {scrollTrigger: {trigger: ".discover-profile", start: "top bottom", toggleActions: "restart pause resume pause"}, opacity: 1, duration: 2, ease: "power2"});
-    
-    
-
-
 
     gsap.to(".education-title", {scrollTrigger: {trigger: ".education-title", toggleActions: "restart pause resume pause", start: "top bottom", end: "bottom center", scrub: 1}, left:"50%", xPercent:-50, ease: "power2"});
     gsap.to(".education-list", {scrollTrigger: {trigger: ".education-list", toggleActions: "restart pause resume pause", start: "top bottom", end: "top center", scrub: 1}, right:"50%", xPercent:50, ease: "power2"});
 
-
-
-
-
     gsap.to(".projects", {scrollTrigger: {trigger: ".projects", start:"200px bottom", end: "-200px top", toggleActions: "restart pause resume pause", scrub: 3}, opacity: 1, ease: "power2"});
 
-    let nb = 0;
 
-    document.querySelector('#leftbtn').addEventListener("click", () => {
-        if(nb>0) {
-            nb--;
-            document.querySelector("#container-slider").style.transform = "translate("+(-nb*document.querySelector(".project-content").offsetWidth)+"px)";
-        }
-    });
-
-    document.querySelector('#rightbtn').addEventListener("click", () => {
-        if(nb<9) {    
-            nb++;
-            document.querySelector("#container-slider").style.transform = "translate("+(-nb*document.querySelector(".project-content").offsetWidth)+"px)";
-        }
-    });
-
-    
-
-
-    
     gsap.utils.toArray("section").forEach((panel, i) => {
         ScrollTrigger.create({
             trigger: panel,
@@ -111,7 +75,7 @@ window.addEventListener("load", () => {
     //gsap.to("footer", {scrollTrigger: {trigger: "footer", start: "top top", pin: true, pinSpacing: false}});
 
 
-    if (window.matchMedia("(min-width: 481px)").matches) {
+    if(window.matchMedia("(min-width: 481px)").matches) {
         ScrollTrigger.create({
             snap: {
                 snapTo: 1 / (4 - 1),
@@ -121,6 +85,7 @@ window.addEventListener("load", () => {
                 }
         });
     }
+
 
     $(window).resize(function() {
         l1.style.width = "25vw";
@@ -138,4 +103,23 @@ window.addEventListener("load", () => {
         }
     });
 
+});
+
+
+$(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+        items:1,
+        loop:true,
+        center:true,
+        margin:150,
+        nav:false,
+        dots:true,
+        autoHeight:false,
+        autoWidth:false,
+        responsive:{
+            480:{
+                items:2,
+            }
+        }
+    });
 });
