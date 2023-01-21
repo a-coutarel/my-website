@@ -515,9 +515,9 @@ footer a {
 
 .backbutton {
     width: 4vh;
-    background-color: #111;
+    background: none;
     position: fixed;
-    right: 1vw;
+    right: 0.2vw;
     cursor: pointer;
 }
 
