@@ -454,6 +454,17 @@ p a {
     margin: 0 auto;
 }
 
+.android img {
+    max-width: 48%;
+    margin: 0 auto;
+}
+
+
+.photoshop img {
+    max-width: 31%;
+    margin: 0 auto;
+}
+
 .swift img {
     max-width: 48%;
     margin: 0 auto;
@@ -471,11 +482,6 @@ p a {
 
 .werewolf img {
     max-width: 45%;
-    margin: 0 auto;
-}
-
-.photoshop img {
-    max-width: 31%;
     margin: 0 auto;
 }
 
