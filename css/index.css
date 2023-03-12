@@ -434,6 +434,11 @@ p a {
     font-size: 1vw;
 }
 
+.bula img {
+    max-width: 75%;
+    margin: 0 auto;
+}
+
 .ai img {
     max-width: 60%;
     margin: 0 auto;

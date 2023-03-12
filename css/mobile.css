@@ -161,6 +161,11 @@
         font-size: 3.5vw;
     }
 
+    .bula img {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
     .ai img {
         max-width: 70%;
         margin: 0 auto;
